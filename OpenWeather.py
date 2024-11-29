@@ -59,7 +59,7 @@ if city:
         df =pd.DataFrame(weather, index=[0])
         st.map(df, latitude="Latitude", longitude="Longitude", zoom=10,)
 
-st.title(f"Temperature Trends (Next 5 )") 
+st.title(f"Temperature Trends (Next 5 days )") 
 
 if city:
     forecast_weather = fetch_weather_city(city,FORECAST_URL)
